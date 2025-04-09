@@ -49,4 +49,5 @@ Once the core functionality is complete, I’d like to add these features for ex
 - **Purpose**: This project will demonstrate my skills in full-stack development, cloud services, and user-focused design.
 
 
+![wireframe](TriviaHomeWireFrame.png)
 ![wireframe](TriviaWireFrame.png)
