@@ -1,18 +1,52 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Hello World!</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supercross Trivia Challenge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080?text=Tire+Tread+Pattern');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: 'Arial', sans-serif;
+    }
+    .logo-placeholder {
+      width: 150px;
+      height: 150px;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #e60000;
+      border-radius: 10px;
+    }
+  </style>
 </head>
+<body class="text-white">
+  <header class="text-center py-8">
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight">Supercross Trivia Challenge</h1>
+  </header>
 
-<body>
-  <h1>HTML Rocks!</h1>
-  <img src="img/compile.jpeg">
-  <script type="module" src="js/main.js"></script>
+  <main class="flex-grow flex flex-col items-center justify-center px-4">
+    <div class="logo-placeholder mb-8">
+      <span class="text-black font-bold">Logo: Bike & Tread</span>
+    </div>
+    <a href="/game" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-xl mb-8 transition duration-300">Start Game</a>
+    <div class="flex space-x-4">
+      <a href="/leaderboard" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Leaderboard</a>
+      <a href="/submit-question" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Submit a Question</a>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 text-gray-400">
+    <p>Built by [Ryan Wensmann] - 2025</p>
+  </footer>
 </body>
-
 </html>
